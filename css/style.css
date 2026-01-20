@@ -64,8 +64,12 @@ body {
   margin: 0;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 32px;
+  justify-items: center;
+}
+.card-grid > :last-child:nth-child(3n + 1) {
+  grid-column: 2;
 }
 
 /* Responsive rule */
