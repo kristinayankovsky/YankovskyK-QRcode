@@ -1,0 +1,81 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 304px;
+  padding: 16px 16px 32px;
+  border-radius: 20px;
+  text-align: center;
+  
+
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+.qr-image {
+  width: 270px;
+  height: 288px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+
+.card h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  margin-bottom: 16px;
+}
+
+
+.card p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(216, 15%, 48%);
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+/* PART 2 GRID LAYOUT */
+
+.grid-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* Responsive rule */
+@media (max-width: 1000px) {
+  .grid-container {
+    align-items: flex-start;
+    padding-top: 32px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
