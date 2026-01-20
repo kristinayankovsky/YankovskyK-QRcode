@@ -73,13 +73,20 @@ body {
 }
 
 /* Responsive rule */
-@media (max-width: 1000px) {
-  .grid-container {
+
+
+@media (max-width: 768px) {
+  body {
     align-items: flex-start;
-    padding-top: 32px;
+  }
+
+  .grid-container {
+    padding: 24px 0;
   }
 
   .card-grid {
     grid-template-columns: 1fr;
   }
 }
+
+
