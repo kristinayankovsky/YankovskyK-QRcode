@@ -84,6 +84,10 @@ body {
     gap: 24px;
   }
 
+  .card-grid > * {
+    grid-column: auto !important;
+  }
+
   .card {
     width: 100%;
     max-width: 320px;
