@@ -8,9 +8,7 @@ body {
     min-height: 100vh;
     background-color: hsl(212, 45%, 89%);
     font-family: 'Outfit', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .card {
@@ -57,6 +55,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 24px;
 }
 
 .card-grid {
@@ -75,12 +74,8 @@ body {
 
 /* Responsive rule */
 @media (max-width: 768px) {
-  body {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
   .grid-container {
+    align-items: flex-start;
     padding: 24px 16px;
   }
 
@@ -94,7 +89,6 @@ body {
     max-width: 320px;
   }
 }
-
 
 
 
