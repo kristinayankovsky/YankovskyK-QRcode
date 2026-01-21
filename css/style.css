@@ -74,20 +74,27 @@ body {
 }
 
 /* Responsive rule */
-
-
 @media (max-width: 768px) {
   body {
     align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .grid-container {
-    padding: 24px 0;
+    padding: 24px 16px;
   }
 
   .card-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
   }
 }
+
+
 
 
